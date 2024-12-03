@@ -1,0 +1,43 @@
+{
+  "name": "blockchain-solidity-contracts-1wp",
+  "version": "1.0.0",
+  "description": "1wp solidity smart contracts",
+  "scripts": {
+    "clean-compile": "hardhat clean && hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.ts --network polygon",
+    "deploy:testnet": "hardhat run scripts/deploy.ts --network testnet",
+    "size": "hardhat size-contracts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.rapidinnovation.tech/root/1wp-smart-contracts-blockchain.git"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.1.0",
+    "@openzeppelin/contracts-upgradeable": "^5.1.0",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.22.3",
+    "hardhat-contract-sizer": "^2.6.1",
+    "keccak256": "^1.0.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.11",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "@typechain/ethers-v5": "^10.2.1",
+    "@typechain/hardhat": "^6.1.6",
+    "@types/chai": "^4.3.16",
+    "@types/mocha": "^10.0.6",
+    "chai": "^4.4.1",
+    "hardhat-gas-reporter": "^1.0.10",
+    "merkletreejs": "^0.3.10",
+    "solidity-coverage": "^0.8.2",
+    "typechain": "^8.3.2"
+  }
+}
